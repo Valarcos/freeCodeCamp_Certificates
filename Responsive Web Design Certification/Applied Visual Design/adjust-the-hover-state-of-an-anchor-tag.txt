@@ -1,0 +1,11 @@
+<style>
+  a {
+    color: #000;
+  }
+  a:hover{
+    color: blue; 
+  }/*useful when checking wether a link is working or not_MBAJ*/
+
+
+</style>
+<a href="http://freecatphotoapp.com/" target="_blank">CatPhotoApp</a>

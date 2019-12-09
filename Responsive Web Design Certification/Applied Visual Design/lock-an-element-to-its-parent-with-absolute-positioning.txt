@@ -1,0 +1,30 @@
+<style>
+  #searchbar {
+    position:absolute;
+    top:50px;
+    right:50px;
+    /*There is a need to be specially careful
+    when using the position:absolute property
+    as it removes the element from the normal 
+    flow of the document. 
+    
+    Should deepen my understanding of this 
+    property to avoid positioning problems when 
+    designing a web page */
+
+  }
+  section {
+    position: relative;
+    
+  }
+</style>
+<body>
+  <h1>Welcome!</h1>
+  <section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search">
+      <input type="submit" name="submit" value="Go!">
+    </form>
+  </section>
+</body>

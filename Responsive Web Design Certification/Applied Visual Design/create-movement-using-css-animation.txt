@@ -1,0 +1,35 @@
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left: 0px;  
+    }/*As there is an horizontal and vertical direction in wich the element gets displaced, the object travels in a diagonal motion*/
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 25px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+    } /*instead of going back to the starting horizontal position, it travels further going 25 px past its original position when the animation goes into the second half*/
+  }
+</style>
+
+<div id="rect"></div>

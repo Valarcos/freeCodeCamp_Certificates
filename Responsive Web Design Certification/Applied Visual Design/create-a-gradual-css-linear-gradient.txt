@@ -1,0 +1,12 @@
+<style>
+  div {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background:linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  }/*Be carefull with the way the angles are used. 90deg is a vertical transition from left to right. 0 deg is a horizontal transition from bottom to top*/
+
+</style>
+
+<div></div>

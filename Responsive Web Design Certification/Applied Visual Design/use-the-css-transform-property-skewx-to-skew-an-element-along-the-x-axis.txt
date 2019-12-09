@@ -1,0 +1,18 @@
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+  }   /*transform:skewX( 0 deg) where 0 may be any given degree may have some use when styling text.*/
+
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>

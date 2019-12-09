@@ -1,0 +1,22 @@
+<style>
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /* add your code below this line */
+    animation-fill-mode: forwards;
+    /* add your code above this line */
+  }
+  /*The animation-fill-mode property may be what is needed to make a better animation, filling in for the lack of resources i had at my disposal before. This should work in conjuction with what i've learned about @keyframes in the last challenges to achieve a better result.*/
+  @keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+  }
+</style>
+<button>Register</button>

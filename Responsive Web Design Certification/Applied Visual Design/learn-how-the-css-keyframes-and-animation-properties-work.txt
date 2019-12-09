@@ -1,0 +1,28 @@
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+  }
+  
+  @keyframes rainbow{
+    0%{
+      background-color: blue;
+    }
+    50%{
+      background-color: green;
+    }
+    100%{
+      background-color: yellow;
+    }
+  } /*If the only things specified are the beggining(0%) and the end(0%) of an animation, CSS supposedly fills the in-between frames for a smooth transition from one specified moment in the animation to another specified moment.*/
+
+</style>
+<div id="rect"></div>

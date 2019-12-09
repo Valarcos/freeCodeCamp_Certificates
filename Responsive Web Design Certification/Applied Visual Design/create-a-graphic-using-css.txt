@@ -1,0 +1,17 @@
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  } /*The 3rd (blur-radius) and 4th (spread-radius) values are optional. The 4th stands for the ammount of pixels that the shadow increases beyond the base size of the element. The 3rd remains unclear as to what specifically modifies.*/
+
+</style>
+<div class="center"></div>
