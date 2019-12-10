@@ -1,0 +1,9 @@
+<header>
+  <h1>Weapons of the Ninja</h1>
+</header>
+
+<main></main>
+
+<footer></footer>
+
+<!--Recomended structure for website design. Gives a clear distinction between its sections and content so that it can be easily accesed-->

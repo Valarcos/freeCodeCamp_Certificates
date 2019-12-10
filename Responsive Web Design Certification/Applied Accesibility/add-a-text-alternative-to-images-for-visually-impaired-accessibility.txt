@@ -1,0 +1,3 @@
+<img src="doingKarateWow.jpeg" alt="Camper Cat doing Karate">
+
+<!--Its mandatory as per HTML5 specification to include an alt attribute that describes whats on screen on images used in websites-->
