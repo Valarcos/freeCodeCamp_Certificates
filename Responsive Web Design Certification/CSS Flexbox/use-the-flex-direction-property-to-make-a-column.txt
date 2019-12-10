@@ -1,0 +1,24 @@
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+  }
+  /*Just as in a previous challenge the children of the flex container where arranged in a row by using the flex-direction property with a value of row and a row-reverse in another (inverted order of the children elements), its possible to arrange the children elements in a column. It's also possible to make a reverse column using the value column-reverse.*/
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
