@@ -1,0 +1,54 @@
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  /*flex-wrap enables the split of a flex item into multiple rows(or columns).
+  There are 3 values for the flex-wrap property that change the way the flex items are wrapped inside the flex container:
+
+  nowrap: this is the default setting, and does not wrap items.
+  wrap: wraps items from left-to-right if they are in a row, or top-to-bottom if they are in a column.
+  wrap-reverse: wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.*/
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>
+  <div id="box-5"></div>
+  <div id="box-6"></div>
+</div>
