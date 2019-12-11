@@ -1,0 +1,36 @@
+<style>
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
+
+  .item5 {
+    background: PaleGreen;
+    /* add your code below this line */
+    grid-column: 2/4;
+    /* add your code above this line */
+  }
+  /*The grid-column property enables the configuration of a cell to consume several columns. The values used by the property are positive integer numbers that represent the lines dividing the columns (from left to right starting with the number 1) and rows(from top to bottom starting with the number 1). 
+  The imaginary line between the first and last column/row and the border of the container are also taken into account for the numbers used.
+  For example, for a container that has 6 cells aligned in 3 columns and 2 rows, if i want to make a cell that consumes the top center cell and the top right cell, I will have to make a rule for the top center cell and give it the property grid-column with a value of 2 / 4, the rule will look like this:   grid-column: 2/4;
+  The slash diferentiates the line numbers, the first being the starting line and the second the finish line for the cell configuration.*/
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+</style>
+
+<div class="container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div>

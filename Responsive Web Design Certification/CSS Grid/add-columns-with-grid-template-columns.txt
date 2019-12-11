@@ -1,0 +1,30 @@
+<style>
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* add your code below this line */
+    grid-template-columns: 100px 100px 100px;
+
+    /* add your code above this line */
+  }
+  /*The grid-template-columns adds columns to the structure of the grid.
+  The number of parameters given to the grid-template-columns property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.
+  The items inside the container automatically fill the created cells from left to right in the same row and from top to bottom after the first row is full.
+  My guess is that there is a similar property for the rows configuration*/
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
