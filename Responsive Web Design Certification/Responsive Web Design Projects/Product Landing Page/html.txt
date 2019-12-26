@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title id="title">Product landing page_Template.</title>
+	<meta name="description" content="Product landing page_Template.">
+	<meta name="author" content="Valarcos">
+
+</head>
+
+<body>
+	<div id="body-div" class="container">
+		<header id=header class="box">
+			<h1 class="flex-two">Product landing page_Template.</h1>
+
+			<figure id="img-div" class="flex-three">
+				<img id="header-img" src="https://via.placeholder.com/400x150?text=Placeholder+img" alt="Placeholder alt text">
+				<figcaption id="img-caption">This is a placeholder caption for the placeholder img.</figcaption>
+				<!--In the case where the img is purely decorative, the alt attribute should be left with a blank value (alt="")
+	For images with a caption, you may still want to include alt text, since it helps search engines catalog the content of the image.-->
+			</figure>
+
+			<nav id=nav-bar class="flex-one">
+				<ul class="ul">
+					<li> <a href="#main-content-a" class="nav-link">Placeholder text.</a> </li>
+					<li> <a href="#main-content-b" class="nav-link">Placeholder text.</a> </li>
+					<li> <a href="#main-content-c" class="nav-link">Placeholder text.</a> </li>
+				</ul>
+				<!--The # in the a tag's href attribute indicates a link to a part of the same document. Useful for navigation through the document.-->
+			</nav>
+
+		</header>
+		<main id="main">
+
+			<div id="main-content-a" class="div">
+				<h2 class="main-h2">When is a div used?</h2>
+				
+				<iframe id="video" class="iframe" width="560" height="315" src="https://www.youtube.com/embed/swWeWesZVZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </iframe>
+				
+				<p>A div is used when there is no relationship between groups of content.</p>
+			</div><br>
+
+			<section id="main-content-b" class="section">
+				<h2 class="main-h2">When is a section used?</h2>
+				<p>Sections are used for grouping thematically related content. May include several articles.</p>
+				<h3 class="main-h3">Articles inside sections.</h3>
+				<article class="article">
+					<p>Articles group independent, self-contained content.</p>
+				</article>
+			</section> <br>
+
+			<article id=main-content-c class="article">
+				<h2 class="main-h2">How can articles be used?</h2>
+				<p>An article may have several sections within it.</p>
+				<section class="section">
+					<h3 class="main-h3">Sections inside articles</h3>
+					<p>In the case of an article being a book, each section would be a chapter.</p>
+				</section>
+			</article><br>
+
+			<form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+
+				<!--The following is the email field div-->
+				<div class="form-group">
+					<label id="email-label" for="email">Email</label>
+
+					<input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required>
+				</div>
+
+				<!--The following is the submit input div-->
+				<div class="form-group">
+					<input type="submit" name="submit" id="submit" value="Submit" class="submit-button">
+
+				</div>
+
+			</form>
+
+			<a class="a" target="_blank" id="tribute-link" href="Placeholder url">Placeholder Link</a>
+
+		</main>
+		<footer class="footer">This is placeholder text for a place holder footer.</footer>
+
+	</div>
+</body>
+
+</html>

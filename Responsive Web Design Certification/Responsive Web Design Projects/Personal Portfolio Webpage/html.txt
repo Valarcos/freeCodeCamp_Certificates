@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title id="title">Personal_Portfolio_Webpage</title>
+	<meta name="description" content="Personal_Portfolio_Webpage">
+	<meta name="author" content="Valarcos">
+
+</head>
+
+<body>
+	<div id="main-div" class="container">
+
+		<main id="main-doc">
+
+			<section id="welcome-section">
+				<h1 id="header-h1">Welcome to my personal portfolio</h1>
+			</section>
+
+			<section id="projects">
+
+				<header id="projects-section">
+					<h2>This is the projects section</h2>
+				</header>
+
+				<div class="projects-grid">
+					<div class="project-tile">
+						<a href="https://codepen.io/valarcos/full/eYmvgKg" id="project-link">
+							<figure id="img-div">
+								<img id="tech-img" src="https://screenshot.codepen.io/3897518.eYmvgKg.49208561-7b5a-4a2f-8643-979e9c0743d0.png" alt="Placeholder alt text">
+								<figcaption id="img-caption">Technical_Documentation_Page_Template</figcaption>
+							</figure>
+						</a>
+					</div>
+
+					<div class="project-tile">
+						<a href="https://codepen.io/valarcos/full/BayWKNd" id="project-link">
+							<figure id="img-div">
+								<img id="product-img" src="https://screenshot.codepen.io/3897518.BayWKNd.3fec7d9d-09fd-4a1d-87b3-005908973e3f.png" alt="Placeholder alt text">
+								<figcaption id="img-caption">Product landing page.</figcaption>
+							</figure>
+						</a>
+					</div>
+
+					<div class="project-tile">
+						<a href="https://codepen.io/valarcos/full/XWJpYpr" id="project-link">
+							<figure id="img-div">
+								<img id="survey-img" src="https://screenshot.codepen.io/3897518.XWJpYpr.ea9be852-73b5-4603-960f-cdc33077b349.png" alt="Placeholder alt text">
+								<figcaption id="img-caption">Basic_Survey_Form_HTML5_Template</figcaption>
+							</figure>
+						</a>
+					</div>
+
+					<div class="project-tile">
+						<a href="https://codepen.io/valarcos/full/jOEVVMR" id="project-link">
+							<figure id="img-div">
+								<img id="patch-img" src="https://screenshot.codepen.io/3897518.jOEVVMR.962a057c-f4f1-4991-85f7-851c74d9b1f3.png" alt="Placeholder alt text">
+								<figcaption id="img-caption">Tribute Page_Patch Adams</figcaption>
+							</figure>
+						</a>
+					</div>
+
+			</section>
+
+			<nav id="navbar">
+				<ul class="nav-ul">
+					<!--as many li elements as there are elements with main-section class-->
+					<li> <a class="nav-link" href="#welcome-section">Welcome section</a> </li>
+					<li> <a class="nav-link" href="#projects-section">Projects</a> </li>
+				</ul>
+			</nav>
+
+			<footer id="footer">
+				<p>In case you want to know more about me and my work over the years, please feel free to browse through my <span><a href="https://github.com/Valarcos" id="profile-link" target="_blank">personal GitHub profile.</a></span> </p>
+
+			</footer>
+		</main>
+		</div>
+</body>
+
+</html>

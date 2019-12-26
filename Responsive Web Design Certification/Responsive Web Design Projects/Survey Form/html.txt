@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title id="identification">Survey Form</title>
+	<meta name="description" content="Survey Form">
+	<meta name="author" content="Valarcos">
+
+</head>
+
+<body>
+	<div id="body-div" class="container">
+		<header class="header">
+			<h1 id="title">Survey Form in the making.</h1>
+
+			<p id="description" class="p">This is a placeholder description for a survey form webpage. Feel free to share with us your view on what a good survey form webpage should look like.</p>
+		</header>
+
+		<main id="main">
+
+			<form id="survey-form">
+
+				<div class="form-group">
+					<label class="label"  id="name-label" for="name">Name</label>
+
+					<input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+
+				</div>
+				<div class="form-group">
+					<label class="label"  id="email-label" for="email">Email</label>
+
+					<input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required>
+
+				</div>
+				<div class="form-group">
+					<label class="label"  id="number-label" for="number">Age <span class="clue">(optional)</span> </label>
+
+					<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+
+				</div>
+				<div class="form-group">
+					<p class="p">Placeholder text that asks to choose some kind of option from a dropdown list.</p>
+
+					<select name="placeholder name reflects the description given" id="dropdown" class="form-control" required>
+						
+        		<option disabled selected value>Select one of the other options
+						</option>
+						<option value="reflects the text used as an option">Placeholder option
+						</option>
+						<option value="option 1">option 1
+						</option>
+						<option value="option 2">option 2
+						</option>
+						<option value="option 3">option 3
+						</option>
+					</select>
+
+				</div>
+
+				<div class="form-group">
+					<p class="p">Placeholder text that asks to choose some kind of option from radio buttons.</p>
+					<label class="label" >
+        <input
+          name="name for rad-btn group"
+          value="option 1" 
+          type="radio"
+          class="input-radio"
+          checked
+        />Option 1.</label
+      ><!--(the input value attribute should reflect the text given for the input option)-->
+					<label class="label" >
+        <input
+          name="name for rad-btn group"
+          value="option 2"
+          type="radio"
+          class="input-radio"
+        />Option 2.</label
+      >
+					<label class="label" >
+        <input
+          name="name for rad-btn group"
+          value="option 3"
+          type="radio"
+          class="input-radio"
+        />Option 3.</label
+      >
+					
+				</div>
+				
+				<div class="form-group">
+					<p class="p">
+        Ask to select an option
+        <span class="clue">(Check all that apply)<!--presents the chance to select more than one checkbox--></span>
+      </p>
+					<label class="label" >
+						<input
+          name="placeholder name for the checkbox group"
+          value="box 1"
+          type="checkbox"
+          class="input-checkbox"
+        >Box 1</label>
+
+					<label class="label" >
+						<input
+          name="placeholder name for the checkbox group"
+          value="box 2"
+          type="checkbox"
+          class="input-checkbox"
+        >Box 2</label>
+
+					<label class="label" >
+						<input
+          name="placeholder name for the checkbox group"
+          value="box 3"
+          type="checkbox"
+          class="input-checkbox"
+        >Box 3</label>
+
+				</div>
+
+				<div class="form-group">
+					<p class="p">Text area for personal custom input from the form filler</p>
+					<textarea id="" class="input-textarea" name="free text input" placeholder="Placeholder text for the text area">
+						
+					</textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+				</div>
+
+			</form>
+
+		</main>
+		<footer>This is placeholder text for a place holder footer.</footer>
+
+	</div>
+</body>
+
+</html>

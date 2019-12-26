@@ -1,0 +1,172 @@
+/*remember to always try to give format to html elements using class and or id. Avoid using 
+html tag gral selectors when possible, because it may cause conflict with other elements in the document if you are using imported elements (fonts, libraries, scripts, etc.)*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+} /*CSS reset so that the page showcases the desired format*/
+
+.container {
+	margin: 0px;
+	min-width: 290px;
+	color: #4d4e53;
+	background-color: #b3ffb3;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	margin-left: ;
+}
+
+#header-h1 {
+	font-family: monospace;
+	font-size: 2em;
+}
+
+#section-header {
+	text-decoration: underline;
+}
+
+#img-caption {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#navbar {
+	background-color: #b3b3ff;
+	position: fixed;
+	min-width: 250px;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 100%;
+	border-right: solid;
+	border-color: rgba(0, 22, 22, 0.4);
+}
+
+.header {
+	color: goldenrod;
+	margin: 10px;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: thin;
+}
+
+.container .header {
+	text-align: left;
+	margin: 0px;
+}
+
+#navbar ul {
+	height: 88%;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#navbar li {
+	color: #4d4e53;
+	border-top: 1px solid;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+#navbar a {
+	display: block;
+	padding: 10px 30px;
+	color: #4d4e53;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.container {
+	position: absolute;
+	margin-left: 300px;
+	padding: 20px;
+	margin-bottom: 110px;
+}
+
+section article {
+	color: #4d4e53;
+	margin: 15px;
+	font-size: 0.96em;
+}
+
+section li {
+	margin: 15px 0px 0px 20px;
+}
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+	/* For mobile phones: */
+	#navbar ul {
+		border: 1px solid;
+		height: 207px;
+	}
+
+	#navbar {
+		background-color: white;
+		position: absolute;
+		top: -265px;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		max-height: 250px;
+		border: none;
+		z-index: 1;
+		border-bottom: 2px solid;
+	}
+
+	.container {
+		position: relative;
+		margin-left: 0px;
+		margin-top: 270px; /*This shouldnt be neccesary as the page is now, but may be worth of attention for polishing*/
+		/*height: ((100vh)-(250px));		this line of code does not work, or at least not how i envisioned it*/
+	}
+
+	#nav-header {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.container {
+		margin-left: -10px;
+	}
+
+	#nav-header {
+		/*This change in text alignment and the margin is so that the header changes position responsively in accordance to the size of the viewport so that the format does not break as soon*/
+		text-align: center;
+		margin-left: 30px;
+	}
+
+	code {
+		margin-left: -20px;
+		width: 100%;
+		padding: 15px;
+		padding-left: 10px;
+		padding-right: 45px;
+		min-width: 233px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	#nav-header {
+		margin-left: -40px;
+	}
+}

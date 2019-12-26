@@ -1,0 +1,79 @@
+/*remember to always try to give format to html elements using class and or id. Avoid using 
+html tag gral selectors when possible, because it may cause conflict with other elements in the document if you are using imported elements (fonts, libraries, scripts, etc.)*/
+
+/*TRY TO FIX THIS WEBPAGE LATER ON SO THAT IT FOLLOWS CONVENTIONS*/
+
+html {
+	/* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+	font-size: 10px;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 0;
+}
+h2 {
+	font-size: 2.7rem;
+	margin-bottom: 0;
+}
+h3 {
+	font-size: 2.3rem;
+	margin-bottom: 0;
+}
+div {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-align: center;
+	color: #333;
+	margin: 0;
+	background: #a3a398;
+	border-radius: 6px;
+	padding: 6px;
+}
+
+article{
+	margin-bottom: 80px;
+}
+#img-div {
+	padding: 10px;
+	margin: 0;
+	margin: auto;
+
+	background: lightgray;
+	border-radius: 6px;
+	border-color: steelblue;
+	border-width: 5px;
+	border-style: solid;
+}
+
+#image {
+	display: block; /*Setting the display property to block is needed to be able to use the margin: auto property and value.*/
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+@media (min-width: 300px) {
+	#image {
+		width: 35%;
+	}
+}
+
+@media (max-width: 460px) {
+	#img-caption {
+		font-size: 1.4rem;
+	}
+}
+
+nav{
+	background: lightgray;
+	border-radius:6px;
+	margin-bottom: 60px;
+}
+
+ul{
+	text-align: left;
+	margin: 15px 0px 0px 42.5%;
+}

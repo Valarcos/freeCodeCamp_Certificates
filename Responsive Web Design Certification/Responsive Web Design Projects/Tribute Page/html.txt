@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title id="title">Tribute Page_Patch Adams</title>
+	<meta name="description" content="Tribute Page_Patch Adams">
+	<meta name="author" content="Valarcos">
+
+</head>
+
+<body>
+	<div>
+		<header>
+			<h1>Dr. Hunter Doherty "Patch" Adams.</h1>
+			<p>The man who saves people's lives as well as their hearts.</p>
+
+			<figure id="img-div">
+				<img id="image" src="https://cms.qz.com/wp-content/uploads/2015/06/patch_adams001.jpg?quality=75&amp;strip=all&amp;w=410&amp;h=232" alt="Patch adams greeting the viewer.">
+				<figcaption id="img-caption">Patch Adams warmly salutes you.</figcaption>
+				<!--In the case where the img is purely decorative, the alt attribute should be left with a blank value (alt="")
+	For images with a caption, you may still want to include alt text, since it helps search engines catalog the content of the image.-->
+
+			</figure>
+
+			<nav>
+				<ul>
+					<li> <a href="#early-life">Early life.</a> </li>
+					<li> <a href="#beggining">Where it all began.</a> </li>
+					<li> <a href="#P.A.nowadays">Patch nowadays.</a> </li>
+				</ul>
+				<!--The # in the a tag's href attribute indicates a link to a part of the same document. Useful for navigation through the document.-->
+			</nav>
+
+		</header>
+		<main id="main">
+
+			<section id="tribute-info">
+				<article id="early-life">
+					<h2><u>Patch Adams early life.</u></h2>
+					<p>Adams was born in Washington, D.C., the son of Anna Campbell Stewart (née Hunter) and Robert Loughridge Adams. His father, a United States Army officer who fought in Korea, died while stationed in Germany when Adams was only 16. After his father's death, Adams returned to the United States with his mother and brother. Adams has stated that upon his return he encountered institutional injustice which made him a target for bullies at school. As a result, Adams was unhappy and became actively suicidal. After a third hospitalization in one year he decided <strong>"you don't kill yourself, stupid; you make revolution."</strong>
+						<h3>Early career</h3>
+						After graduating in 1963 from Wakefield High School, Adams completed pre-med coursework at George Washington University. He began medical school without an undergraduate degree, and earned his Doctor of Medicine degree at Virginia Commonwealth University (Medical College of Virginia) in 1971. In the late 1960s one of his closest friends (a man, not a woman as depicted in the Patch Adams film) was murdered. Convinced of the powerful connection between environment and wellness, he believes the health of an individual cannot be separated from the health of the family, community, and the world. While working in an adolescent clinic at MCV, in his final year of med school, he met Linda Edquist, a fellow VCU student who volunteered in the clinic.
+						Adams and Edquist married in 1975 and had two sons, Atomic Zagnut "Zag" Adams and Lars Zig Edquist Adams; they divorced in 1998.</p>
+				</article>
+				<article id="beggining">
+					<h2><u>The dream beggins to turn into a reality.</u></h2>
+					<p>Soon after graduation, Patch, Linda, and friends founded the Gesundheit! Institute (originally known to many as the Zanies), which ran as a free community hospital from 1971 to 1984. 
+A revamped Gesundheit! Institute, envisioned as a free, full-scale hospital and health care eco-community, is planned on 316 acres (128 ha) in Pocahontas County, West Virginia. Its goal is to integrate a traditional hospital with alternative medicine, with the organization developing educational programs in sustainable systems design targeted to medical students and the general public. 
+Since the 1990s Adams has supported the Ithaca Health Alliance (IHA), founded as the Ithaca Health Fund (IHF) by Paul Glover. In January 2006 IHA launched the Ithaca Free Clinic, bringing to life key aspects of Adams' vision. Adams has also given strong praise to Health Democracy, Glover's book written and published the same year. </p>
+				</article>
+				<article id="P.A.nowadays">
+					<h2><u>Patch Adams nowadays.</u></h2>
+					<p>In October 2007, Adams and the Gesundheit! Board unveiled its campaign to raise $1 million towards building a Teaching Center and Clinic on its land in West Virginia. The Center and Clinic will enable Gesundheit! to see patients and teach health care design. 
+Adams urges medical students to develop compassionate connections with their patients. His prescription for this kind of care relies on humor and play, which he sees as essential to physical and emotional health. Ultimately, Adams wants the Gesundheit! Institute to open a 40-bed hospital in rural West Virginia that offers free, holistic care to anyone who wants it. 
+Adams was awarded the Peace Abbey Courage of Conscience Award on January 29, 1997. <br>
+						
+In 2008, Adams agreed to become honorary chair of the "International Association for the Advancement of Creative Maladjustment" or IAACM. MindFreedom International, a nonprofit coalition that Gesundheit! belongs to as a sponsor group, launched the IAACM to support "creative maladjustment" and social change. 
+Adams still leads trips to cheer kids up all over the world. He also teaches at one session of Wavy Gravy's circus camp Camp Winnarainbow. </p>
+				</article>
+			</section> <br>
+
+			<p><a target="_blank" id="tribute-link" href="https://www.patchadams.org/">Oficial website</a> for the Gesundheit! institute, founded by Patch Adams.</p>
+
+		</main>
+		<footer>If you think you know how great of a man he is because of the movie based on his life,<br> you are wrong. Take a minute to know this man by reading his <a target="_blank" id="tribute-link" href="https://www.patchadams.org/patch-adams/">autobiography.</a>			</footer>
+
+	</div>
+</body>
+
+</html>
