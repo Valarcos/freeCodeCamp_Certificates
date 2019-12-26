@@ -1,0 +1,9 @@
+// Example
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+
+// Only change code below this line
+var myName= "Marcos";
+var myStr= "My name is " +myName+ " and I am well!";
+
+/*Again, its possible to concatenate strings and variables that store strings. It may be possible to do the same thing with variables storing other type of data, resulting in a literal string that includes the value in the resulting string, in the case i request the variable's value using the console for example. */

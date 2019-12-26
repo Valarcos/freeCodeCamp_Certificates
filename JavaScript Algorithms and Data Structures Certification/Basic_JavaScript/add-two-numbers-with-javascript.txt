@@ -1,0 +1,4 @@
+var sum = 10 + 10; //This assigns the value 20 to the sum variable
+
+/*I previously tried to use values composed of mathematical
+operations when solving the html and CSS challenges in the Responsive Web Design Certification without success, since it needs some other considerations i was not aware of at the time of solving them. Using JavaScript seems to be an easier alternative.*/

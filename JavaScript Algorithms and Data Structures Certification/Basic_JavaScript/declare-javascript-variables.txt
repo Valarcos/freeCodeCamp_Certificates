@@ -1,0 +1,5 @@
+// Example
+var ourName;
+
+// Declare myName below this line
+var myName; //This creates a variable identified by the name "myName"

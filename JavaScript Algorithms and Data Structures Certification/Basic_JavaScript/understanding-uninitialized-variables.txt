@@ -1,0 +1,10 @@
+// Initialize these three variables
+var a= 5;
+var b= 10;
+var c= "I am a";
+
+// Do not change code below this line
+
+a = a + 1;  //Its important to make sure that variables involved in mathematical operations are initialized before said operations are made since the initial value of all variables that werent given a value is "undefined". This results in a NaN value for math and a literal string of "undefined" when concatenating a string with an undefined variable. 
+b = b + 5;
+c = c + " String!";

@@ -1,0 +1,13 @@
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+/*JavaScript does not discriminate between double quotes and single
+quotes. They work the same way. But what must be taken into account
+is that despite the fact that you can make a string using either
+quote, you must end said string with the same type of quote used to
+start it.
+This peculiarity of quotes in JavaScript can be useful when i want
+to make a string with several instances of quoted text. Instead of
+using several escape characters (the backslash character), alternating between one type of quote for the outer quotes that 
+start and end the string and the other type of quote for the quoted
+text inside the string can make the easier the experience of writing
+that string.*/

@@ -1,0 +1,14 @@
+// Example
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+firstLetterOfFirstName = firstName[0];
+
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+
+/*Basically, every string of characters has an index value asigned for each and every character inside it. Said index starts asigning values from zero up to a number equal to the number of characters in the string minus one. When using [] and an integer number inside it after the name of a variable, the character that sits in the specified index position inside the string represented by said variable can be accesed and be used as one sees fit.*/

@@ -1,0 +1,12 @@
+// Declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+
+/*Always try to use variable and function names written in camelCase as it is considered best practice among programmers.*/
+

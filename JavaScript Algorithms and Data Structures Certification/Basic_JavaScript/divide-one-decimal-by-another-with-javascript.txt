@@ -1,0 +1,8 @@
+var quotient = 4.4 / 2.0;   /*Fix this line
+For some unknown reason, the freeCodeCamp's editor gave a 
+strong color to the comment of "fix this line" when it was written
+on the same line as the division operation and stablished using the
+single line comment operator (//). Using the multiple line comment
+operator seems to work just fine. It may be a particular interaction
+that happens when said string of characters appear on the same line 
+while using their editor*/

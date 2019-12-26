@@ -1,0 +1,5 @@
+var difference = 45 - 33;   //This operation assigns the value 12 to the variable "difference"
+
+/*This way, its also possible to make substraction operations. 
+I suspect its also possible to make division and multiplication
+operations as well.*/

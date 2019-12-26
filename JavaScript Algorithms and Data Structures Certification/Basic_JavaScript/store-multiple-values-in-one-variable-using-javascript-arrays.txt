@@ -1,0 +1,7 @@
+// Example
+var ourArray = ["John", 23];
+
+// Only change code below this line.
+var myArray = ["Hey there!", 8];
+
+/*Arrays can me made using brackets containing several pieces of data, separating each individual value using commas between each value. The data pieces need not be of the same data type.*/

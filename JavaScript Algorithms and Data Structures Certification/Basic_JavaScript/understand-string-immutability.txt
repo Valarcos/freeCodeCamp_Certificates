@@ -1,0 +1,17 @@
+// Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+
+myStr = "Hello World"; // Fix Me
+
+/*In JavaScript, String values are immutable, which means that they cannot be altered once created. 
+The only way to change the string inside a variable is to assign a
+new string to the variable. Even if one can access specific 
+characters inside a string using the index selector, said specific 
+characters cannot be altered using this notation. 
+
+var myStr = "Bob";
+myStr[0] = "J";
+
+The example above does not work.*/

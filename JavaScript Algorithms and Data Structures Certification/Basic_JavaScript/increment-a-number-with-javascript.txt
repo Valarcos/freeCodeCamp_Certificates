@@ -1,0 +1,8 @@
+var myVar = 87;
+
+// Only change code below this line
+myVar++;
+
+/*The increment (++) operator works by adding "one" to the variable
+it is associated to, making counters for while and for loops simpler
+to make.*/ 

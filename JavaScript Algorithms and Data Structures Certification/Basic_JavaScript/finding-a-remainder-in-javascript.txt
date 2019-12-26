@@ -1,0 +1,8 @@
+// Only change code below this line
+
+var remainder=11%3;
+
+/*The remainder (% uses the percentaje symbol)operator is sometimes
+incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.
+
+I should look for the proper use of the "modulus" operator.*/

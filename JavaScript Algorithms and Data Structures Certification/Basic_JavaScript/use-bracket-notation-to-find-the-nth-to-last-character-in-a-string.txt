@@ -1,0 +1,16 @@
+// Example
+var firstName = "Ada";
+var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length-2];
+
+/*It can also be used to get a character that sits in an index 
+position that is X positions away from the last character in the 
+string.
+
+Just remember to be careful when doing this, since it can be 
+somewhat unfamiliar to the way you normally count numbers.*/

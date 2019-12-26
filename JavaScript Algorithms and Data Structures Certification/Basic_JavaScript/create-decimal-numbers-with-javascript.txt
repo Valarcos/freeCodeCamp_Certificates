@@ -1,0 +1,10 @@
+var ourDecimal = 5.7;
+
+// Only change code below this line
+
+var myDecimal= 3.5; 
+/*Decimals can be represented with JavaScript when assigning values
+to variables, but since computers have a hardware limitation in the
+precision they can achieve, not all real numbers can be represented
+using floating point numbers (name sometimes given to decimal
+numbers)*/

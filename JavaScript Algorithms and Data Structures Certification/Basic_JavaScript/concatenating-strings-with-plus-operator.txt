@@ -1,0 +1,10 @@
+// Example
+var ourStr = "I come first. " + "I come second.";
+
+// Only change code below this line
+
+var myStr = "This is the start. " + "This is the end.";
+
+/*The + operator works when working with string as a concatenation
+operator. It simply concatenates both strings together, one after
+the other. */

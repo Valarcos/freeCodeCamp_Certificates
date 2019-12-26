@@ -1,0 +1,6 @@
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+var wordBlanks = "My " + myNoun + " is so " + myAdjective + " that he easily " + myVerb + " away from me when i tried to stop it from chasing a squirrel that " + myAdverb+ " went past us through the road."; // Only change this line;

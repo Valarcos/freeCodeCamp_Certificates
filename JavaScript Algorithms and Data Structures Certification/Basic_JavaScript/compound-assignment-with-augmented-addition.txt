@@ -1,0 +1,24 @@
+var a = 3;
+var b = 17;
+var c = 12;
+
+            
+// Only modify code below this line
+
+a += 12;    
+b += 9;     
+c += 7;     
+            
+	    /*The use of the += operator makes it easier to modify
+            a variable when the intention is to add a value to
+            the previous value stored in the variable.
+            
+            As it happened when learning to program with C++, its 
+            fairly possible that the order in wich the + and = 
+            operators are combined (+= or =+) affects the way the
+            variable is modified.
+	    For some unknown reason, the freeCodeCamp tester didnt
+	    ackowledge the submission of the challenge's solution
+	    because there was a comment in the editor page. This 
+	    should'nt happen since comments are supposed to be 
+	    ignored.*/

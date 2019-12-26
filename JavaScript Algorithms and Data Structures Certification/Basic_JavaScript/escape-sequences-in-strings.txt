@@ -1,0 +1,19 @@
+var myStr; // Change this line
+
+myStr="FirstLine\n\t\\SecondLine\nThirdLine";
+
+/*There are several characters that can make use of the backlash escape character to be typed inside a string without JavaScript 
+misinterpreting what the programmer's intention was.
+The following is a list of several examples of what is written above
+
+Code            Output
+\'          single quote
+\"          double quote
+\\          backslash           
+\n          newline
+\r          carriage return
+\t          tab
+\b          word boundary
+\f          form feed
+
+Note that the backslash itself must be escaped in order to display as a backslash.*/
