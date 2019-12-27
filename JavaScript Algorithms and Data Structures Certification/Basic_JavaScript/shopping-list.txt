@@ -1,0 +1,7 @@
+var myList = [ ["candies", 8],
+               ["vases", 5], 
+               ["pots", 2], 
+               ["meat", 5], 
+               ["carrots", 9] ];
+
+/*Its possible to create multi-dimensional arrays separating the arrays in several lines using the comma as a divisive. At first i thought the code wouldn't run correctly, but it seems that  JavaScript does not take empty spaces into account when running lines of code.*/

@@ -1,0 +1,8 @@
+// Example
+var ourArray = [["the universe", 42], ["everything", 101010]];
+
+// Only change code below this line.
+var myArray = [["This ", 8],[" pieces of ", 18],[" arrays work badly ", 45]];
+
+/*Its possible to make a matrix using arrays. To do it, the only thing neccesary is to nest arrays inside another array.
+Other more complex groups of data can be made nesting arrays inside other arrays, making multidi-mensional arrays.*/

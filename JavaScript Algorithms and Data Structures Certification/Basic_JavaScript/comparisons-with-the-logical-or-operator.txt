@@ -1,0 +1,24 @@
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) { //this one is the 'or' operator
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+// Change this value to test
+testLogicalOr(15);
+
+/*The 'or' operator and the 'and'(&&) operator do not work in the same way The operands compared only return false when both operands 
+are false. Otherwise, it returns true.
+
+The following is the truth table for 'or' operator:
+
+true  'or'  true  =>  true
+true  'or'  false  =>  true
+false  'or'  true  =>  true
+false  'or'  false  =>  false
+*/

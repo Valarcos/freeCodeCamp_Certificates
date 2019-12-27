@@ -1,0 +1,20 @@
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+console.log(testEqual(12));
+ 
+ /* JavaScript can compare two different data types (for example, 
+numbers and strings). In order for JavaScript to do so, it must 
+convert one type to another. This is known as "Type Coercion". 
+Once it does, however, it can compare terms as follows:
+
+1   ==  1   // true
+1   ==  2   // false
+1   == '1'  // true
+"3" ==  3   // true   */

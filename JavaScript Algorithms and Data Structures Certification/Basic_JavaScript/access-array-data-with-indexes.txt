@@ -1,0 +1,24 @@
+// Example
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+
+// Setup
+var myArray = [50,60,70];
+
+// Only change code below this line.
+
+var myData = myArray[0];
+
+/*Just as indexes can be used to access particular characters inside
+a string variable, indexes can also be used to access specific 
+variables stored within an array. The way this pieces of knowledge 
+are piling up suggests the possibility of accessing a variable 
+inside an array that is nested inside another array.
+
+It may involve complicated operations or functions, but it may also 
+just involve a simple line of code that needs to be properly written 
+to avoid grave mistakes.
+
+I'm wondering if the restriction of not being able to modify 
+characters inside strings using the index is also applied to 
+arrays.*/

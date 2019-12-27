@@ -1,0 +1,29 @@
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val){
+    case "a":
+      answer= "apple";
+      break;
+    case "b":
+      answer= "bird";
+      break;
+    case "c":
+      answer= "cat";
+      break;
+    default:          //used when there are to many possible cases
+      answer= "stuff";//to be accounted for
+      break;
+  }
+
+
+  // Only change code above this line
+  return answer;
+}
+
+// Change this value to test
+console.log(switchOfStuff("a"));  //given arguments must match
+console.log(switchOfStuff("b"));  //the cases contempled in the 
+console.log(switchOfStuff("c"));  //function. Do remember that 
+console.log(switchOfStuff("d"));  //switch strictly compares
+console.log(switchOfStuff(4));    //arguments.

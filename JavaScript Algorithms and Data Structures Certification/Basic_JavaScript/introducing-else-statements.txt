@@ -1,0 +1,21 @@
+function testElse(val) {
+  var result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else{                   /*As it stands, it would seem the else
+                            statement does not accept a condition
+                            to be stablished as the i.f statement                                 does*/
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+// Change this value to test
+console.log(testElse(4));
+console.log(testElse(5));
+console.log(testElse(6));
+console.log(testElse(10));

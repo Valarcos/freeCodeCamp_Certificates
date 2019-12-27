@@ -1,0 +1,65 @@
+var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;//increases the counter
+      break; //function should skip rest of cases once the break is executed
+
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;//decreases the counter
+      break;
+  }
+
+  var status= '';
+  if (count>0){
+    status=' Bet';
+  }else{
+    status=' Hold';
+  }
+  return count+status;
+  // Only change code above this line
+}
+
+// Add/remove calls to test your function.
+// Note: Only the last will display
+cc(2); cc(3); cc(4); cc(5); cc(6);
+console.log(cc());  //in previous challenges i called the console.log
+count= 0;           //function with the function of interest as the 
+                    //argument, but what i should have been doing is
+                    //call the function in a line, give it a proper
+                    //argument, and then make it display using the
+                    //console.log() function.
+
+cc(7); cc(8); cc(9);
+console.log(cc());
+count= 0;
+
+cc(10); cc('J'); cc('Q'); cc('K'); cc('A');
+console.log(cc());
+count= 0;
+
+cc(3); cc(7); cc('Q'); cc(8); cc('A');
+console.log(cc());
+count= 0;
+
+cc(2); cc('J'); cc(9); cc(2); cc(7);
+console.log(cc());
+count= 0;
+
+cc(2); cc(2); cc(10);
+console.log(cc());
+count= 0;
+
+cc(3); cc(2); cc('A'); cc(10); cc('K');
+console.log(cc());
+count= 0;

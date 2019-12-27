@@ -1,0 +1,25 @@
+function isLess(a, b) {
+  // Fix this code
+  return a<b; 
+  
+  /*for simple comparisons its sometimes better to avoid 
+  using i.f statements to make the code less clunky and more 
+  readable. 
+
+  Also, there is a possible added benefit in not using an i.f 
+  statement. When the use of an i.f statement is avoided, the code 
+  runs faster because there are less comparisons that need 
+  proccesing capacity to be done, efectively reducing the time it 
+  takes for the whole code to be executed (this is easier to notice 
+  when a block of code runs a loop with one or more i.f statements 
+  inside it a ton of times, the insigni.ficant delays start to pile 
+  up, eventually delaying the proccess by a noticeable ammount of 
+  time). Using a return statement only may be cheaper in code 
+  writing cost, but its completely unknown to me i.f its more 
+  efficient than an i.f statement.*/
+}
+
+// Change these values to test
+
+console.log(isLess(10, 15));
+console.log(isLess(15, 10));

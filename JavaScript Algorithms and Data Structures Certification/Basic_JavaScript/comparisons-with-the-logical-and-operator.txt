@@ -1,0 +1,35 @@
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val<=50 && val>=25) { 
+    return "Yes";
+    
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+// Change this value to test
+console.log(testLogicalAnd(10));
+console.log(testLogicalAnd(30));
+
+/*Review the 'logical "and" ' operator hierarchy and how operands 
+are divided in subsubjects based on the operators used. As it stands 
+it would seem there is no need to use parenthesis to encase the 
+perands around the 'logical "and" ' operator in the conditional (i.f 
+there is a dot between both letters so that the webpage won't detect 
+it as a mistake while completing the challenge) statement, unlike 
+C++ where it was mandatory. */
+
+/*Classic 'and'  operator for when i wanna make a condition for
+something to be done in a function or variable. It only returns 
+true when both operands on both sides of it are true. Otherwise, the
+value returned is false.
+The truth table would look like this
+
+true  'and'  true  =>  true
+true  'and'  false  =>  false
+false  'and'  true  =>  false
+false  'and'  false  =>  false
+ */
