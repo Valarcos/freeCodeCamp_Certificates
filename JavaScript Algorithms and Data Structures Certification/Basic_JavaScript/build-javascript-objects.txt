@@ -1,0 +1,26 @@
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+// Only change code below this line.
+
+var myDog = {
+  "name": "Fluffrir",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Yuki", "Iluna", "Shii", "Lyu", "Leila", "Lefy"]
+};
+
+/*Objects are declared just as variables are, using the 'var' 
+keyword followed by a space before the name of the object is given. 
+This objects in JavaScript have their data organized in properties. 
+Their names are written between quotes (in other words, the names 
+are strings).
+
+Properties are separated by commas. The last property to be defined 
+does not end with a comma, instead it simply is followed by the 
+closing brace(llave) */

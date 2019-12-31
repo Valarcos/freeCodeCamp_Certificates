@@ -1,0 +1,21 @@
+ var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+function randomWholeNum() {
+
+  // Only change code below this line.
+  
+  return Math.floor(Math.random()*10);
+}
+
+/*Math.floor(Math.random() * 20);
+We are calling Math.random(), multiplying the result by 20, 
+then passing the value to Math.floor() function to round the 
+value down to the nearest whole number.
+
+Because we are multiplying the number by 20, the range of 
+whole numbers we are gonna get with that line of code is from
+0 to 19, since Math.random() goes from 0 to not quite 1.*/
+
+for(var i=0; i<5; i++){
+  console.log(randomWholeNum());
+}

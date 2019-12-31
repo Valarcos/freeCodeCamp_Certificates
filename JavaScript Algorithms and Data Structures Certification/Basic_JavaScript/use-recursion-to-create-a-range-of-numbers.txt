@@ -1,0 +1,41 @@
+//First way of solving the challenge
+function rangeOfNumbers01(startNum, endNum) {
+  if(startNum===endNum){
+      return [startNum];
+  }else{
+    var arrayC= rangeOfNumbers01(startNum, endNum-1);
+    arrayC.push(endNum);
+    return arrayC;
+  }
+}
+console.log(rangeOfNumbers01(1,5));
+
+//Second way of solving the challenge
+function rangeOfNumbers02(startNum,endNum){
+  if(startNum === endNum){
+      return [startNum];
+  }
+  return  rangeOfNumbers02(startNum,endNum-1).concat(endNum);
+} //.concat is a function that concatenates string values
+
+console.log(rangeOfNumbers02(1,5)); //works for cases where startNum is smaller than endNum
+
+/*************************/
+
+function rangeOfNumbers(startNum,endNum){
+  if(startNum>endNum){
+    var aux= rangeOfNumbers(endNum, startNum);
+    return aux;
+  }else{
+    if(startNum==endNum){
+      return [startNum];
+    }else{
+      var arrayC= rangeOfNumbers(startNum+1, endNum);
+      arrayC.unshift(startNum);
+      return arrayC;
+    }
+  }
+}
+console.log(rangeOfNumbers(8,-1));
+/*This function works even when startNum is bigger than endNum.
+It also accepts negative values*/

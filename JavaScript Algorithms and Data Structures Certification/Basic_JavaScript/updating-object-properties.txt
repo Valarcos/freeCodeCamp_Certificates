@@ -1,0 +1,25 @@
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.name = "Happy Camper";
+
+// Setup
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line.
+myDog.name= "Happy Coder";
+
+/*Its pretty easy to change an object's property value. The only 
+requisite is to invoke the object of interest along with the property
+we want to change, then assign the value we want to the property as 
+normal using the assignment operator (=) */

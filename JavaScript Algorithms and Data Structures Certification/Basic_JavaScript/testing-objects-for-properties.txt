@@ -1,0 +1,36 @@
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  // Your Code Here
+  if(myObj.hasOwnProperty(checkProp)){
+    return myObj[checkProp];
+  }
+  return "Not Found";  
+}
+
+// Test your code by modifying these values
+console.log(checkObj("gift"));
+console.log(checkObj("pet"));
+console.log(checkObj("house"));
+
+/*Sometimes it is useful to check if the property of a given object 
+exists or not. We can use the .hasOwnProperty(propname) method of 
+objects to determine if that object has the given property name. 
+.hasOwnProperty() returns true or false if the property is found or 
+not.
+
+Example
+
+var myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");    // true
+myObj.hasOwnProperty("middle"); // false  
+
+when "top" is checked to see if a property has that name, it goes in quotes because its a string. However, in the case of the challenge itself, what is used is the argument given to the function. This works just as a variable being used to access an object's property, so it must be invoked between brackets when trying to access the object's property.*/

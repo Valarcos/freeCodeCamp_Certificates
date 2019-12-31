@@ -1,0 +1,28 @@
+// Example
+function ourRandomRange(ourMin, ourMax) {
+
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+}
+
+ourRandomRange(1, 9);
+
+// Only change code below this line.
+
+function randomRange(myMin, myMax) {
+
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  /*Adding 'myMin' to the expresion ensures we get to have the minimum value, since if the random number is zero, the myMin will add to that avoiding a value of zero.
+  
+  The ('myMax' - 'myMin' + 1) is meant to ensure that the random number generated is not multyplied by zero in the eventuality that both the 'myMax' and 'myMin' are equal.
+  
+  Even so, I think there should be other ways of doing this, since there should be a way to obtain a number range that spans from negative values till the positives.*/
+
+}
+
+// Change these values to test your function
+
+
+for(var i=0; i < 5; i++){
+  var myRandom = randomRange(5, 15);
+  console.log(myRandom); 
+}

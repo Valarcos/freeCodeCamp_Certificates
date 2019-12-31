@@ -1,0 +1,15 @@
+function sum(arr, n) {
+  // Only change code below this line
+
+  /*Recursive functions must have a base case when 
+  they return without calling the function again 
+  (in this example, when n <= 0), otherwise they 
+  can never finish executing. */
+
+  if(n<=0){ 
+    return arr[0];
+  } else{
+    return sum(arr, n-1) + arr[n];
+  }
+  // Only change code above this line
+}

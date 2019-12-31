@@ -1,0 +1,65 @@
+//Only change code below this line
+function countdown(n){
+  /*console.log(n);*/
+  if (n<1){
+    return [];
+  }else{
+    var arrayC= countdown(n-1);
+    arrayC.unshift(n);  /*For some reason im not convinced in 
+    the way i resolved this challenge. I simply copied the 
+    example given and used 'unshift()' instead of push. I 
+    imagine there should be a way of arranging the recursive 
+    function so that the 'push()' is usable.*/
+    return arrayC;
+  }
+}
+console.log(countdown(5)); // [5, 4, 3, 2, 1]
+
+function countdown2(n){
+  /*console.log(n);*/
+  if (n>5){
+    return [];
+  }else{
+    var arrayC= countdown2(n+1);
+    arrayC.push(n);  /*Found a way to make it work using the 'push' keyword. The way to do so was changing the base of the recursive function and the way the function called itself increasing the number 'n' instead of decreasing it (because of the base chosen)*/
+    return arrayC;
+  }
+}
+console.log(countdown2(1));
+/*In a previous challenge, you learned how to use recursion to 
+replace a for loop. Now, let's look at a more complex function 
+that returns an array of consecutive integers starting with 1 
+through the number passed to the function.
+
+As mentioned in the previous challenge, there will be a base 
+case. The base case tells the recursive function when it no 
+longer needs to call itself. It is a simple case where the 
+return value is already known. There will also be a recursive 
+call which executes the original function with different 
+arguments. If the function is written correctly, eventually the 
+base case will be reached.
+
+For example, say you want to write a recursive function that 
+returns an array containing the numbers 1 through n. This 
+function will need to accept an argument, n, representing the 
+final number. Then it will need to call itself with 
+progressively smaller values of n until it reaches 1. You could 
+write the function as follows:
+
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]
+
+At first, this seems counterintuitive since the value of n 
+decreases, but the values in the final array are increasing. 
+This happens because the push happens last, after the recursive 
+call has returned. At the point where n is pushed into the array,
+count(n - 1) has already been evaluated and returned 
+[1, 2, ..., n - 1]. */

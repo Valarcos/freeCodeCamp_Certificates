@@ -1,0 +1,8 @@
+function convertToInteger(str) {
+    return parseInt(str, 2);//first argument, string to convert
+}                           //second argument, base of the number
+                            //represented in the string
+
+console.log(convertToInteger("10011"));
+
+/*This is a numeric conversor. It accepts a number written in any base from 2 to 36 and converts it in an base 10 integer. */
