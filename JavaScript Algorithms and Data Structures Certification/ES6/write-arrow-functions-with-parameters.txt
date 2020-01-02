@@ -1,0 +1,18 @@
+const myConcat = (arr1, arr2) => { //always remember to use const
+                                  //when declaring v.ariables
+  "use strict";
+  return arr1.concat(arr2);
+};
+// test your code
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+/*Just like a regular f.unction, you can pass arguments into an arrow 
+f.unction.
+
+// doubles input value and returns it
+const doubler = (item) => item * 2;
+
+It is possible to pass more than one argument into an arrow f.unction.
+
+// multiplies the first input value by the second and returns it
+const multiplier = (item, multi) => item * multi;*/

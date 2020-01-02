@@ -1,0 +1,40 @@
+const magic = () => {
+  "use strict";
+  return new Date();
+};
+
+console.log(magic());
+
+
+/*Writing arrow f.unctions lets us work in a diferent scope than the other types of f.unctions (whatever that means, needs to be searched and studied). Not to be confused with anonymous f.unctions (even if the challenge description says otherwise, Javi from WiLab told me that if a f.unction is assigned to a named v.ariable, then its not an anonymous f.unction even if it uses the arrow syntax) */
+
+//challenge description
+
+/*In JavaScript, we often don't need to name our f.unctions, 
+especially when passing a f.unction as an argument to another 
+f.unction. Instead, we create inline f.unctions. We don't need to name 
+these f.unctions because we do not reuse them anywhere else.
+To achieve this, we often use the following syntax:
+
+const myFunc = f.unction() {
+  const myv.ar = "value";
+  return myv.ar;
+}
+
+ES6 provides us with the syntactic sugar to not have to write 
+anonymous f.unctions this way. Instead, you can use arrow f.unction 
+syntax:
+
+const myFunc = () => {
+  const myv.ar = "value";
+  return myv.ar;
+}
+
+When there is no f.unction body, and only a return value, arrow 
+f.unction syntax allows you to omit the keyword return as well as the 
+brackets surrounding the code. This helps simplify smaller f.unctions 
+into one-line statements:
+
+const myFunc = () => "value";
+
+This code will still return value by default.*/

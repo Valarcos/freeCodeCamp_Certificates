@@ -1,0 +1,21 @@
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2= [...arr1];  /* If the idea is to assign the values from one 
+array to the other, then the normal syntax for adding elements to an 
+array should be used, and instead of simply writing arr1 inside the 
+brackets, wich would lead to adding the arr1 as an element of the 
+arr2 array (not what we want), using "..." before the name of the 
+array will lead to every element of the arr1 array to be assigned as 
+an individual element of the arr2 array.*/
+
+/*...arr returns an unpacked array. In other words, it spreads the 
+array. However, the spread operator only works in-place, like in an 
+argument to a function or in an array literal. The following code 
+will not work: 
+
+const spreaded = ...arr; // will throw a syntax error*/
+
+console.log(arr2);
+
+/*More info here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax */
