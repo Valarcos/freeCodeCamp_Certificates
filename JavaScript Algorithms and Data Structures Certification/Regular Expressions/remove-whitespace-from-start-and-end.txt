@@ -1,0 +1,8 @@
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let replaceText= "";
+let result = hello.replace(wsRegex, replaceText); // Change this line
+
+console.log(result);
+
+/*The .t.rim() method would work here, but you'll need to complete this challenge using regular expressions.*/

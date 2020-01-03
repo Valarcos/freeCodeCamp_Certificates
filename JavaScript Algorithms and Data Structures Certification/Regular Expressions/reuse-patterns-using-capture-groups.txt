@@ -1,0 +1,59 @@
+let repeatNum = "42 42 42 42 42";
+let reRegex = /^(\d+)(\s)\1\2\1$/; 
+/* The character in parenthesis are the capture groups, in other 
+words, the sets of characters that will return a match when testing 
+the string. After i finished writing all the capture groups i may 
+need, using backlashes and a number following it, I can repeat the 
+capture groups without the need of writing the block of code of said 
+capture groups. 
+
+The numbers begin with the number 1, \1 representing 
+the first capture group(first block of string between parenthesis), 
+\2 the second group, and so on. If my intention is to make a pattern 
+with the capture groups, i need only make said pattern using the 
+backlash and number representation of the capture groups i need to 
+repeat. 
+
+As written in the code above, the string to match is a 
+number, followed by a space, and then \1 signifying a number, \2 
+signifying a space and \1 signifying a number again.*/
+
+/*The first line of code that was well written is 
+let reRegex = /(\d+)(\s)\1\2\1/;  
+
+But since the challenge asks to make it so the only matches are 
+numbers repeated 3 times, not less not more, I must not forget to 
+add the ^ and $ characters. The ^ character marks that the expression 
+following it must be at the beggining of the string and the $ character 
+marks that the expression preceding it must be at the end
+
+Capture groups can be referenced and mixed with literal characters as 
+well, there is no need to only use capture groups when making a match 
+that makes use of them.*/
+let result = reRegex.test(repeatNum);
+let result2 = repeatNum.match(reRegex);
+
+console.log(result);
+console.log(result2);
+
+/*Some patterns you search for will occur multiple times in a 
+string. It is wasteful to manually repeat that regex. There is a 
+better way to specify when you have multiple repeat substrings in 
+your string.
+You can search for repeat substrings using capture groups. 
+Parentheses, ( and ), are used to find repeat substrings. You put 
+the regex of the pattern that will repeat in between the parentheses.
+To specify where that repeat string will appear, you use a backslash 
+(\) and then a number. This number starts at 1 and increases with 
+each additional capture group you use. An example would be \1 to 
+match the first group.
+The example below matches any word that occurs twice separated by a 
+space:
+
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]
+
+Using the .match() method on a string will return an array with the 
+string it matches, along with its capture group.*/
