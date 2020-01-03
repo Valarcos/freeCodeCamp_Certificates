@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <!-- add your code below -->
+    <script type="module" src="index.js"></script>
+    <!-- add your code above -->
+  </body>
+</html>
+
+<!--By using the script tag above and setting its
+type to module I can now use the import and 
+export features-->
+
+<!-- This is how I can create a relationship bet-
+ween a JavaScript file and an HTML file -->

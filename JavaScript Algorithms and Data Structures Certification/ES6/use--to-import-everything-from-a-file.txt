@@ -1,0 +1,8 @@
+import * as stringFunctions from './string_functions.js';
+/*Always REMEMBER to include the file path when writing the source of 
+the functions we wish to import. In the case the .js file is in the 
+same directory, adding a './' before the .js file will suffice */
+// add code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
