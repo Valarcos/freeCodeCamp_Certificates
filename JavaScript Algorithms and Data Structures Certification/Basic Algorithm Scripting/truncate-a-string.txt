@@ -1,0 +1,15 @@
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  let truncate="";
+  if(str.length>num){
+    for(let i=0; i<num; i++){
+      truncate+=str[i];
+    }
+    return truncate+"...";
+  }
+  return str;
+}
+
+let result= truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+console.log(result);

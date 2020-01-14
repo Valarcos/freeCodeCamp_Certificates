@@ -1,0 +1,35 @@
+function findLongestWordLength(str) {
+  let auxArr= str.split(" ");
+  let maxWordLength= 0;
+  for (let i=0; i<auxArr.length; i++){
+    if (auxArr[i].length>maxWordLength){
+      maxWordLength=auxArr[i].length;
+    }
+  }
+  return maxWordLength;
+}
+
+console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+
+/*The following block of code (written using ES6 syntax)should work:
+
+findLongestWord=(str)=>(str.replace(/\w/g,"1").split(" ").sort().pop().length);
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+but for some reason, when using Chrome instead of Edge as the 
+browser in wich i solve the course challenges, the only result I
+get from the live console is the following message:
+“ReferenceError: findLongestWord is not defined”
+
+
+When using ES5 instead, it did work:
+
+function findLongestWord(str) {
+  return(str.replace(/\w/g,"1").split(" ").sort().pop().length);
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+That block of code properly returned the number 6 in consecuence of
+the word jumped being the longest.*/

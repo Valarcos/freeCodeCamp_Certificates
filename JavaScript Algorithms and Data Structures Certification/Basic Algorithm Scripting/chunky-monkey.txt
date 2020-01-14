@@ -1,0 +1,57 @@
+function chunkArrayInGroups(arr, size) {
+
+  let fragmentedArr = []; //New array with fragmented segments
+  //console.log(auxArr); //Shows the base array
+
+  //for loop that adds the needed sub arrays based on "size"
+  for (let i = 0; i < (arr.length / size); i++) {
+    fragmentedArr[i] = [];
+  }
+  //console.log(fragmentedArr); //Shows the empty fragmented array
+  //console.log(fragmentedArr.length);//fragmented array lengthn
+
+  //for loop intended for adding the base array elements to the new array
+  let i = 0;
+  //while(i<fragmentedArr.length){
+  //starts at subarray index zero of parent array
+  for (let j = 0; j < arr.length; j++) {
+    //starts at position zero of foreign array
+    fragmentedArr[i].push(arr[j]);
+    //adds first element of foreign array to first subarray of parent
+
+    if (fragmentedArr[i].length == size) {
+      console.log("Should be subarray", i + 1, fragmentedArr[i]);
+      i++;
+    } else if (j == arr.length - 1) { 
+      console.log("Should be subarray", i + 1, fragmentedArr[i]); 
+    }
+  }
+  //returns the new fragmented array
+  return fragmentedArr;
+}
+
+
+let result1 = chunkArrayInGroups(["a", "b", "c", "d"], 2);
+console.log(result1);
+
+let result2 = chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
+console.log(result2);
+
+/*
+
+*/
+let result3 = chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
+console.log(result3);
+
+let result4 = chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4);
+console.log(result4);
+
+let result5 = chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3);
+console.log(result5);
+
+let result6 = chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 4);
+console.log(result6);
+
+let result7 = chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2);
+console.log(result7);
+

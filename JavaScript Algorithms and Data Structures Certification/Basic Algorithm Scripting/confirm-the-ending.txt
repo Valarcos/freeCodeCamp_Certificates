@@ -1,0 +1,38 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  let aux= target+"\$"
+  let regex= new RegExp(aux);/*The RegExp constructor takes strings 
+  as arguments for when i need to make a match. It also accepts variables with a string as its value. 
+  In the case i wanna search for and match a variable with a specific special character modifying it, 
+  one way of doing it is assigning the variable to another auxiliar variable and concatenating the 
+  special characters that i want to affect the regex. I need to escape the special characters for the 
+  RegExp constructor to recognize them. This is done using the escape character (this is the one \) 
+  before the special character of interest */
+  let check= regex.test(str);
+
+  return check;
+}
+
+let result= confirmEnding("Bastian", "n");
+
+console.log(result);
+
+/*Be careful when using regular expresions to check for values inside strings.
+
+cheatsheet of regex symbols
+^   search for patterns at the beginning of strings
+[^] things inside brackets being preceded by the caret character (^) will not be matched
+$   search for patterns at the end of strings
+\w  letters and numbers
+\W  non letters and numbers
+\d  numbers
+\D  non numbers
+\s  whitespace characters
+\S  non whitespace characters
++   character preceding it occurs one or more consecutive times
+*   character preceding it occurs zero or more consecutive times
+.   wildcard, matches all characters
+g   find more than the first match
+i   ignore character case
+*/

@@ -4,11 +4,14 @@ let pwRegex = /^(?=\w{6,})(?=\D+\d{2,}\w*)/
 /*  (?=\w{6,}) has to go first so that the string isnt even analized
 if this condition isnt matched*/
 
-/*  (?=\D+)     the string has to begin with something other than a number, be it one or more characters other than numbers */
+/*  (?=\D+)     the string has to begin with something other than a number, be it one or more 
+characters other than numbers */
 
 /*  (?=\d{2})   must have at least 2 consecutive digits*/
 
-/*  The above tries at explaining the match condition do not work in the scenario that the challenge is asking of me. Each section is correctly explained, but the lookaheads with those conditions do not work when put one after as separate lookahead instances. 
+/*  The above tries at explaining the match condition do not work in the scenario that the challenge 
+is asking of me. Each section is correctly explained, but the lookaheads with those conditions do not 
+work when put one after the other as separate lookahead instances. 
 
 /^(?=\w{6,})(?=\D+\d{2,}\w*)/
 
@@ -21,10 +24,14 @@ if this condition isnt matched*/
 
 let result = pwRegex.test(sampleWord);
 
-/*Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. This can be useful when you want to search for multiple patterns over the same string.
+/*Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further 
+along. This can be useful when you want to search for multiple patterns over the same string.
 There are two kinds of lookaheads: positive lookahead and negative lookahead.
-A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
-On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there. The rest of the pattern is returned if the negative lookahead part is not present.
+A positive lookahead will look to make sure the element in the search pattern is there, but won't actually 
+match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
+On the other hand, a negative lookahead will look to make sure the element in the search pattern is not 
+there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be 
+there. The rest of the pattern is returned if the negative lookahead part is not present.
 Lookaheads are a bit confusing but some examples will help.
 
 let quit = "qu";
@@ -34,7 +41,8 @@ let qRegex = /q(?!u)/;
 quit.match(quRegex); // Returns ["q"]
 noquit.match(qRegex); // Returns ["q"]
 
-A more practical use of lookaheads is to check two or more patterns in one string. Here is a (naively) simple password checker that looks for between 3 and 6 characters and at least one number:
+A more practical use of lookaheads is to check two or more patterns in one string. Here is a (naively) 
+simple password checker that looks for between 3 and 6 characters and at least one number:
 
 let password = "abc123";
 let checkPass = /(?=\w{3,6})(?=\D*\d)/;

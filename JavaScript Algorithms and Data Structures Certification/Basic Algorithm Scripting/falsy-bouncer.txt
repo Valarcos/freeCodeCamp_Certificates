@@ -1,0 +1,16 @@
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  let aux = arr.filter(check => check);
+  /*The arrow function check goes over every element of the array being affected by the filter function. The element being tested is passed as the value of the element check, tested against a condition that must return true in order for the array's element in question to be added to the new array. In this case, since the condition is the element check, it translates as "if the element itself evaluates as a falsy value, then the condition returns false and the element is not added to the new array." */
+
+  return aux;
+}
+
+let result1 = bouncer([7, "ate", "", false, 9]);
+let result2 = bouncer(["a", "b", "c"]);
+let result3 = bouncer([false, null, 0, NaN, undefined, ""]);
+let result4 = bouncer([null, NaN, 1, 2, undefined]);
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);

@@ -1,0 +1,60 @@
+/*function titleCase(str) {
+  
+  THIS CODE WORKS, BUT BECAUSE THE CHALLENGE WANTS ME TO USE
+  THE Global String Object methods, in particular:
+  JS String Prototype ToUpperCase
+  JS String Prototype ToLowerCase
+  JS String Prototype Replace
+
+  Check the following links for information related to the topic:
+
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+  http://forum.freecodecamp.com/t/javascript-string-prototype-tolowercase/15948
+
+  http://forum.freecodecamp.com/t/javascript-string-prototype-touppercase/15950
+  
+  http://forum.freecodecamp.com/t/javascript-string-prototype-replace/15942
+
+  let auxArr = [];
+  let strArr = str.split(/\s+/);
+  let newFormat = "";
+
+  for (let i = 0; i < strArr.length; i++) {
+    auxArr.push(strArr[i].split(""));
+
+    for (let j = 0; j < strArr[i].length; j++) {
+
+      auxArr[i][0] = strArr[i][0].toUpperCase();
+      
+
+      if ((j>0)&&(auxArr[i].length > 1)) {
+        auxArr[i][j] = strArr[i][j].toLowerCase();
+      }
+      newFormat += auxArr[i][j];
+    }
+    newFormat+=" ";
+  }
+  return newFormat;
+}*/
+
+String.prototype.replaceAt = function(index, character) {
+  return (
+    this.substr(0, index) + character + this.substr(index + character.length)
+  );
+};
+
+function titleCase(str) {
+  var newTitle = str.split(" ");
+  var updatedTitle = [];
+  for (var st in newTitle) {
+    updatedTitle[st] = newTitle[st]
+      .toLowerCase()
+      .replaceAt(0, newTitle[st].charAt(0).toUpperCase());
+  }
+  return updatedTitle.join(" ");
+}
+
+console.log(titleCase("I'm a little tea pot"));
+console.log(titleCase("sHoRt AnD sToUt"));
+console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));

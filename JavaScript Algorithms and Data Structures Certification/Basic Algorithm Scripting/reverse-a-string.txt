@@ -1,0 +1,14 @@
+function reverseString(str) {
+  let aux="";
+  for (let i=(str.length-1); i>=0; i--){
+    /*Used i==0 as the condition to continue with the for loop, the
+    thing is that since the beggining i does not equal zero, the 
+    loop did not execute. Using i>=0 i ensure the code runs as long 
+    as i is bigger or equal to zero */
+    aux+=str[i];
+  }
+  return aux;
+}
+
+
+console.log(reverseString("hello"));

@@ -1,0 +1,74 @@
+function mutation(arr) {
+
+  //lowercases the strings and splits them in individual characters
+  let auxArr1 = arr[0].toLowerCase();
+  auxArr1 = auxArr1.split("");
+  console.log("arr[0]", auxArr1);
+  let auxArr2 = arr[1].toLowerCase();
+  auxArr2 = auxArr2.split("");
+  console.log("arr[1]", auxArr2);
+
+  //Size of each string
+  let auxArr1Size = auxArr1.length;
+  let auxArr2Size = auxArr2.length;
+  console.log("arr[0] string size:", auxArr1Size, "   arr[1] string size:", auxArr2Size);
+
+  //Should check the ammount of different characters in auxArr2
+  //Will decrease by the ammount of repeated characters
+  //Should match or be smaller than finder counter's value
+  let differentChara = auxArr2.length;
+  let status = true;
+
+  //character finder, makes the function return false if not found
+  let finder= false;
+  let finderCounter=0;
+  
+
+
+  //Different character counter
+  for (let i = 0; i < auxArr2Size; i++) {
+    let checker = false;
+    for (let j = 0; j < auxArr2Size; j++) {
+      //checks if character index i has any clones
+      if ((auxArr2[i] == auxArr2[j]) && (i != j)) {
+        differentChara--;//decreases number of different characters
+        checker = true;
+      }
+    }
+    /*makes the for jump over repeated characters indexes till an 
+    index where a different character appears*/
+    if (checker) {
+      for (let k = 0; k < auxArr2Size; k++) {
+        if (auxArr2[k] == auxArr2[k + 1]) {
+          i++;
+        }
+      }
+    }
+  }
+  console.log("num of different char in substringTwo:",differentChara);
+
+  /*the loop goes through every character in the first string and
+  checks if each string in the second string happens at least 
+  once, if not, returns status=false*/
+  for(let i=0; i<auxArr2Size; i++){
+    for(let j=0; j<auxArr1Size; j++){
+      if (auxArr2[i]==auxArr1[j]){
+        finderCounter++;
+        j=auxArr1Size-1;
+      }
+	  }
+    console.log(finderCounter);
+  }
+  console.log("num of char matched",finderCounter, "from a total of", differentChara,"different char");
+
+  if(finderCounter<differentChara){
+    status= false;
+    return status;
+  }
+
+  return status;
+}
+
+let result= mutation(["Mary", "Aarmy"]);
+console.log(result);
+
