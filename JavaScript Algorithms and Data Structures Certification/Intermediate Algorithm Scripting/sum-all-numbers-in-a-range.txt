@@ -1,0 +1,30 @@
+function sumAll(arr) {
+  let aux;
+  if (arr[0]>arr[1]){
+    aux=arr[0];
+    arr[0]=arr[1];
+    arr[1]=aux;
+  }
+  let counter=0;
+  let counter2=arr[0];
+  for(let i=0; i<=(arr[1]-arr[0]); i++){
+    console.log(i);
+    counter+=counter2;
+    counter2++;
+  }
+  return counter;
+}
+
+
+let result=sumAll([1, 4]);
+
+console.log(result);
+
+/**
+ * We'll pass you an array of two numbers. Return the sum of those 
+ * two numbers plus the sum of all the numbers between them. The 
+ * lowest number will not always come first.
+ * 
+ * For example, sumAll([4,1]) should return 10 because sum of all 
+ * the numbers between 1 and 4 (both inclusive) is 10.
+ **/

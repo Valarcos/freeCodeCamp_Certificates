@@ -1,0 +1,27 @@
+function destroyer(arr) {
+  // Remove all the values
+  let argsUsed=[...arguments];
+  argsUsed=argsUsed.slice(1);
+  let arrBase=[...arguments[0]];
+  //console.log(arrBase); prints the whole array, check
+  let arrFin=[];
+
+  for(let i=0; i<argsUsed.length; i++){
+    for(let j=0; j<arrBase.length; j++){
+      if(arrBase[j]===argsUsed[i]){
+        //console.log(arrBase[j]);
+        arrBase.splice(j,1);
+        console.log(arrBase);
+        j=0;
+        if(arrBase.length==1){
+          j=-1};
+      }
+	  }
+  }
+  return arrBase;
+}
+
+
+let result=destroyer([2, 3, 2, 3], 2, 3);
+
+console.log(result);

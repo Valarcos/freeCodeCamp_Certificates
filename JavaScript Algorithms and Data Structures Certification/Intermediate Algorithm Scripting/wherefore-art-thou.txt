@@ -1,0 +1,37 @@
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+
+  for (let i = 0; i < collection.length; i++) {
+  /*This loop iterates through the collection array accessing 
+  every object inside it to be able to check if the properties
+  from the object passed to the function whatIsInAName as the 
+  second argument are included in the array's object in question */
+
+    let aux = true;
+
+    for (let key in source) {/*for in loop that iterates through
+                              every property in the object*/
+      aux = aux && !!collection[i][key] && collection[i][key] === source[key];/*if the property is within the object being checked
+            aux remains as true, thus giving a chance for the
+            next if to execute and add the object to the new
+            array*/
+    }	//!! is known as double bang, checks if the property given to it as a method but between brackets is within the object it is called upon
+
+    if (aux) {
+      arr.push(collection[i]);
+    }
+
+  }
+  // Only change code above this line
+  return arr;
+}
+
+let result = whatIsInAName(
+
+  [{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }],
+
+  { "apple": 1, "bat": 2 });
+
+console.log("This array should contain the objects that matched the second argument", result);
