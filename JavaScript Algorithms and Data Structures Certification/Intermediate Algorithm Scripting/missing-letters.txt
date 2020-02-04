@@ -1,0 +1,31 @@
+function fearNotLetter(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  
+  let strLength = str.length;
+  let firstLetter = arguments[0][0];
+  console.log("Arguments first letter is \""+firstLetter+"\"");
+
+  let argumentArray = str.split("");
+  console.log("Array of characters",argumentArray)
+
+  let initialIndex = alphabet.indexOf(firstLetter);
+  console.log("Alphabet index", initialIndex);
+
+  console.log("Argument has", strLength, "length and \"" + firstLetter + "\" as its first letter");
+
+  let checkingStr = alphabet.slice(initialIndex, initialIndex+strLength);
+  console.log("Checker string \"" + checkingStr + "\"");
+
+  for (let i = 0; i < strLength; i++) {
+    if (!argumentArray.some(item=>item===checkingStr[i])){
+      return checkingStr[i];
+    }
+  }
+
+
+  return undefined;
+}
+
+let result=fearNotLetter("bcdf");
+
+console.log(result);

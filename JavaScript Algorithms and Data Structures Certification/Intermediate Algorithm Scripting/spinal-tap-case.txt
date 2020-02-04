@@ -1,0 +1,57 @@
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  
+  
+  let auxArr= str.split(/([A-Z]*[a-z]*)/)
+              .join("-")
+              .toLowerCase()
+              .split(/[\W_+\-+]/)
+              .join("-")
+              .split(/[\-]+/)
+              .join(" ")
+              .trim()
+              .split(/ /)
+              .join("-");
+              
+  console.log(auxArr, "testing");
+
+/*
+  //The following block of code works just as the algorithm I used 
+  //in the upper part of the function but is simpler to implement
+  //and easier to read and understand
+
+  // Create a variable for the white space and underscores.
+  var regex = /\s+|_+/g;
+
+  // Replace low-upper case to low-space-uppercase
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+  //Instead of juggling with methods used to transform strings and arrays,
+  //using the replace method to replace the combination of lower-case and
+  //upper-case leters by a lower-space-upper combination works better
+  //The expression "$1 $2" is referencing the first and second elements in the
+  //first argument of the replace method that found a match in the string
+  //and inserts a space in between them. Since I used this reference parameters
+  //the patterns matched are not eliminated but reformated.
+
+  // Replace space and underscore with -
+  return str.replace(regex, "-").toLowerCase();
+*/
+
+  return auxArr;
+}
+
+let result1= spinalCase('This Is Spinal Tap');
+console.log(result1);
+
+let result2= spinalCase('thisIsSpinalTap');
+console.log(result2);
+
+let result3= spinalCase('The_Andy_Griffith_Show');
+console.log(result3);
+
+let result4= spinalCase('Teletubbies say Eh-oh');
+console.log(result4);
+
+let result5= spinalCase('AllThe-small Things');
+console.log(result5);

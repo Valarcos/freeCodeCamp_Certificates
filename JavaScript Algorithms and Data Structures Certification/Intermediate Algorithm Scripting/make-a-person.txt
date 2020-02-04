@@ -1,0 +1,65 @@
+//The following is the object constructor. Bear that in mind while
+//looking for information about the topic on previous challenges
+
+let Person = function(firstAndLast) { 
+/*This constructor accepts parameters*/
+
+
+  let fullName = firstAndLast;//auxiliar variable. As it is created
+                              //as a variable, its local and not 
+                              //considered to be a key
+                              //
+                              //The other declarations starting 
+                              //with this are keys
+
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];/*Makes an array out of the   
+                                  fullname variable and returns the
+                                  first element*/
+  };
+
+  this.getLastName = function() {
+    return fullName.split(" ")[1];/*Makes an array out of the   
+                                  fullname variable and returns the
+                                  last element*/
+  };
+
+
+  /**
+   * the split turns the fullname into an array of first and last 
+   * names and concatenate the unchanged portion of the name with 
+   * what was passed as a parameter. 
+   **/ 
+
+  this.getFullName = function() {
+    return fullName;              //returns full name
+  };
+
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+  
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+var bob = new Person("Bob Ross");
+
+let fullN= bob.getFullName();
+console.log(fullN);
+
+let keysNum= Object.keys(bob).length
+console.log(keysNum);
+
+console.log(bob)
+
+console.log(bob instanceof Person);
+
+console.log(bob.firstName);
+console.log(bob.lastName);
+

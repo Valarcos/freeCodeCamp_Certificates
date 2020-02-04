@@ -1,0 +1,20 @@
+function pairElement(str) {
+  let adnArr= str.split("");
+  let auxArr=[];
+  let aux;
+  for(let i=0; i<adnArr.length; i++){
+    aux="";
+    if(adnArr[i]=="G"){ adnArr[i]+= "C"; }
+    if(adnArr[i]=="C"){ adnArr[i]+= "G"; }
+    if(adnArr[i]=="A"){ adnArr[i]+= "T"; }
+    if(adnArr[i]=="T"){ adnArr[i]+= "A"; }
+    aux=adnArr[i].split("");
+    auxArr.push(aux);
+  }
+
+  return auxArr;
+}
+
+let result=pairElement("ATCGA");
+
+console.log(result);

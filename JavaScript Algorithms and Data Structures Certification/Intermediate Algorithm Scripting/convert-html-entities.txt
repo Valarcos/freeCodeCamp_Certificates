@@ -1,0 +1,50 @@
+function convertHTML(str) {
+  // &colon;&rpar;
+  let stArr= str.split("");
+  console.log(stArr);
+  let newArr= [];
+
+  for(let i=0; i<stArr.length; i++){
+    switch (stArr[i]) {
+      case '&':
+        newArr.push('&amp;')
+        break;
+      case '<':
+        newArr.push('&lt;')
+        break;
+      case '>':
+        newArr.push('&gt;')
+        break;
+      case '"':
+        newArr.push('&quot;')
+        break;
+      case '\'':
+        newArr.push('&apos;')
+        break;
+      default:
+        newArr.push(stArr[i]);
+    }
+  }
+  let newStr= newArr.join("");
+  return newStr;
+}
+
+let result= convertHTML("Dolce & Gabbana");
+
+console.log(result);
+
+/**
+ * HTML entities
+ * 
+ * &	  &amp;	  Interpreted as the beginning of an entity or 
+ *              character reference.
+ * 
+ * <  	&lt;	  Interpreted as the beginning of a tag
+ * 
+ * >  	&gt;  	Interpreted as the ending of a tag
+ * 
+ * "  	&quot;  Interpreted as the beginning and end of an 
+ *              attribute's value.
+ * 
+ * '    &apos;
+ **/

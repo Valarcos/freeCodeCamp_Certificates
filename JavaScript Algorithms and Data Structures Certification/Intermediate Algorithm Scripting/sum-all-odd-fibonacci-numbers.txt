@@ -1,0 +1,36 @@
+function fibonacci(num){
+  let a = 1, b = 0, temp, fibArr=[];
+
+  while (num >= 0){
+    temp = a;
+    fibArr.push(temp);
+    a = a + b;
+    b = temp;
+    num--;
+  }
+  
+  return fibArr;
+}
+
+
+function sumFibs(num) {
+  let fibAuxArr= fibonacci(num);
+
+  let oddsSum=0;
+  for(let i=0; i<fibAuxArr.length; i++){
+    
+    if(fibAuxArr[i]>num){
+      break;
+    }
+    
+    if(!(fibAuxArr[i]%2===0)){
+      oddsSum+=fibAuxArr[i];
+    }
+    
+  }
+
+  return oddsSum;
+}
+
+let result= sumFibs(4);
+console.log(result);

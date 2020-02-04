@@ -1,0 +1,15 @@
+function translatePigLatin(str) {
+  if(/^[aeiou]/.test(str)){
+    str+="way";
+  } else if (/[aeiou]/.test(str)){
+    str= str.replace(/(^[b-df-hj-np-tv-z]+)([a-z]+)/,"$2$1ay")
+  } else { 
+    str+="ay";
+  }
+  //let regex= /(?([aeiou]+))|())/;
+   // str.replace(,"$2$1");
+  return str;
+}
+
+let result = translatePigLatin("consonant");
+console.log(result);

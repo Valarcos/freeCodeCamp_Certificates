@@ -1,0 +1,10 @@
+function truthCheck(collection, pre) {
+  // Is everyone being true?
+  let status= collection.every(item=>item[pre]);
+  return status;
+}
+
+let result= truthCheck([{"single": "yes"}], "single");
+
+console.log(result);
+

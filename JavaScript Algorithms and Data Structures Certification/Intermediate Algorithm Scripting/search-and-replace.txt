@@ -1,0 +1,13 @@
+function myReplace(str, before, after) {
+  if (/[A-Z]/.test(arguments[1][0])){
+    let capit= arguments[2][0].toUpperCase();
+    after= after.replace(arguments[2][0], capit);
+  }
+  str= str.replace(before,after);
+  return str;
+}
+
+
+let result=myReplace("He is Sleeping on the couch", "Sleeping", "sitting");
+
+console.log(result);

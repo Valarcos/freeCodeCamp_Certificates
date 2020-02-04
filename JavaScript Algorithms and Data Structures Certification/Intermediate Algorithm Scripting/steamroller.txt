@@ -1,0 +1,55 @@
+let flatArr=[];
+function steamrollArray(arr) {
+  // I'm a steamroller, baby
+  
+  /**
+   *function ifObjectIsEmpty(object){
+   *    var isEmpty=true;
+   *    if(JSON.stringify(object)==JSON.stringify({})){
+   *      // Object is Empty
+   *      isEmpty = true;
+   *    }
+   *    else{
+   *      //Object is Not Empty
+   *      isEmpty = false;
+   *    }
+   * }
+   * 
+   * This function should be able to check if an object is empty
+   * or not, in case the code below does not work and i cant
+   * work around the error, i should consider trying this one.
+   **/ 
+  
+  if(typeof(arr)==="string" || typeof(arr)==="number"){
+    flatArr.push(arr);
+  }
+
+  if (Array.isArray(arr)){  //checks if its an array
+    arr.forEach(element => steamrollArray(element));
+    //This should call the function for all elements and access
+    //every element in case it has nested elements
+  }
+  else if (typeof(arr)=== "object" && arr!==null){ //checks object
+    if (Object.entries(arr).length === 0 &&
+        arr.constructor===Object){//tests for empty obj(base case)
+      flatArr.push(arr);
+    } 
+    else{
+      arr.forEach(element => steamrollArray(element));
+      //This should call the function for all elements and access
+      //every element in case it has nested elements
+    }
+  }
+  
+  return flatArr;
+}
+
+console.log(steamrollArray([1, [2], [3, [[4]]]]));
+
+/**
+ * Whenever I have to run a test over a piece of code I wrote I
+ * should avoid calling the function in the same code I'm testing
+ * since that could lead to an error because the moment a function
+ * is called, the information may be altered, returning an error
+ * for the tests that run over it
+ **/
