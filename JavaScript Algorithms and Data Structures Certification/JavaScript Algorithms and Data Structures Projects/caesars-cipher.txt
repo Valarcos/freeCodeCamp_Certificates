@@ -1,0 +1,32 @@
+function rot13(str) { // LBH QVQ VG!
+
+  let auxArr= str.split("");//correct
+
+  let lettersArr= "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");//correct
+  
+  let alphaLength= lettersArr.length;//correct
+
+  let currentLetterIndex;
+
+  for(let i=0; i<auxArr.length; i++){
+    currentLetterIndex= lettersArr.indexOf(auxArr[i]);
+    console.log(currentLetterIndex)
+
+    //there are problems when detecting letters under 13 index
+    if (currentLetterIndex!==-1){
+      if(currentLetterIndex<13){
+        auxArr[i]=
+        lettersArr[(alphaLength-1) - (12-currentLetterIndex)];
+      } else{ //following code works well
+        auxArr[i]=lettersArr[currentLetterIndex-13];
+      }
+    }
+  }
+  auxArr= auxArr.join("");
+
+  return auxArr;
+}
+
+// Change the inputs below to test
+let result= rot13("SERR PBQR PNZC");
+console.log(result);

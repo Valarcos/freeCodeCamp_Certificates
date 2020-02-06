@@ -1,0 +1,80 @@
+function telephoneCheck(str) {
+  let status= false;
+  let auxStr = str.replace(/[-() ]/g, ""); //works fine
+  
+  if (/[\D]/.test(auxStr)) {  
+    return false;
+  }
+
+  auxStr = auxStr.replace(/\D/g, ""); //works fine
+  
+
+  if (auxStr.length >= 10) {  //first level check
+
+    if (auxStr.length > 11) {     //second level check      
+      return false;
+
+    } else if (auxStr.length === 11) {  //second level check
+      
+      if (auxStr[0] != 1) {                  //third level check
+        return false;
+      } else{
+        status= true;
+      }
+
+    } else {                            //second level check
+      status= true;
+    }
+
+  } else {                    //first level check
+    return false;
+
+  } //works till this section
+
+  if (status= true){ 
+
+    if (/\d/.test(str[0])){   //four cases start with number
+      
+      if(/^(\d{3})/.test(str)){       //three start with 3 numbers
+
+        if(/^(\d{10})/.test(str)){  //works
+          
+          return true;
+
+        }else if(/^(\d{3} )/.test(str)){  //works
+          
+
+        } else if(/^(\d{3}\-)/.test(str)){
+          
+          return true
+        } else{
+          status=false;
+        }
+
+      }
+
+      if(/1( \d{3} \d{3} \d{4}| \d{3}\-\d{3}\-\d{4}| \(\d{3}\) \d{3}\-\d{4}|\(\d{3}\)\d{3}\-\d{4})/.test(str)){     //last case starting with number
+        
+        return true
+      } else{
+        status=false;
+      }
+    } else if(/^(\(\d{3}\))/.test(str)){  //checks symbol format
+      if(/\(\d{3}\)\d{3}\-\d{4}/.test(str)){
+        return true;
+      }
+      if(/\(\d{3}\) \d{3}\-\d{4}/.test(str)){
+        return true;
+      }else{
+        status= false;
+      }
+    } else{
+      status=false;
+    }
+  }
+  return status; 
+}
+
+let result = telephoneCheck("-1 (757) 622-7382");
+
+console.log(result);

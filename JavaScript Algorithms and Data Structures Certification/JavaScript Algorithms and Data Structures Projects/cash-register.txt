@@ -1,0 +1,86 @@
+function checkCashRegister(price, cash, cid) {
+  let changeValue = cash - price; //works fine
+
+  //Cash value per unit
+  let cashValue = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01];
+  let cashCounter = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  //Cash-in-drawer array auxiliar array
+  let physicalCash = [...cid].reverse();  //copied and reversed arr
+
+  let report = {        //object to be returned at the end
+    status: "status",
+    change: "change"
+  };
+
+  //function to limit decimals
+  function roundNumber(num, dec) {
+    return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
+  }
+
+  //change counter and sorter
+  for (let i = 0; i < physicalCash.length; i++) {
+
+    if (changeValue === 0) {
+      break;
+    }
+
+    if (changeValue >= cashValue[i]) { //Does this currency unit apply?
+      while ((changeValue >= cashValue[i]) && (physicalCash[i][1] > 0)) {
+
+        changeValue -= cashValue[i];
+
+        changeValue = roundNumber(changeValue, 2);
+        //the line above rounds the change value because there is a bug
+        //i can't seem to find the source of that is messing with the math
+        //in the function.
+
+        physicalCash[i][1] -= cashValue[i];
+        cashCounter[i]++;
+      }
+    }
+  }
+
+  //RETURNED OBJECTS BASED ON STATE OF THE PROGRAM
+  if (changeValue !== 0) { //checks if there is not exact change 
+
+    report.status = "INSUFFICIENT_FUNDS";
+    report.change = [];
+
+  }  else{
+    physicalCash[8][1]=roundNumber(physicalCash[8][1],2);    
+
+    if(physicalCash.every(item => item[1]===0)){
+
+      report.status = "CLOSED";
+      physicalCash=physicalCash
+      .map(item=> 
+
+          item[1]= [item[0], cashValue[(physicalCash.indexOf(item))]
+                            *cashCounter[(physicalCash.indexOf(item))]
+                   ]            
+          );
+      report.change = [...physicalCash].reverse();
+
+    }else{//the following code must go inside an else statement
+      report.status = "OPEN";
+
+      for(let i=0; i<cashValue.length; i++){ 
+        cashValue[i]*=cashCounter[i];
+        cashValue[i]=[physicalCash[i][0],cashValue[i]];
+      }
+      
+      cashValue= cashValue.filter(item=> item[1]);
+          
+      report.change = [...cashValue];
+    
+    }
+    
+  }
+  // Here is your change, ma'am.
+  return report;
+} 
+
+let result = checkCashRegister(19.5, 20, [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]);
+
+console.log(result);

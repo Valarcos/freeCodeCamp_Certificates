@@ -1,0 +1,32 @@
+function convertToRoman(num) {
+    let romanNums = ["I", "V", "X", "L", "C", "D", "M", "'V"];
+    let numStr = JSON.stringify(num).split("").reverse();
+    //
+    //I revesed the number,DO NOT FORGET TO REVERSE BACK AT THE END
+    //
+    let j=0;
+    for (let i = 0; i < numStr.length; i++) {
+        
+        if (numStr[i] < 4) {
+            numStr[i] = romanNums[j].repeat(numStr[i]);
+
+        } else if (numStr[i] == 4) {
+            numStr[i] = romanNums[j] + romanNums[j + 1];
+
+        } else if (numStr[i] > 4 && numStr[i] < 9) {
+            numStr[i] =
+                romanNums[j+1]+romanNums[j].repeat(numStr[i]-5);
+
+        } else if (numStr[i] == 9) {
+            numStr[i] = romanNums[j]+romanNums[j+2];
+
+        }
+        j+=2;
+    }
+
+    numStr= numStr.reverse().join("");
+    return numStr;
+}
+
+let result = convertToRoman(36);
+console.log(result);
